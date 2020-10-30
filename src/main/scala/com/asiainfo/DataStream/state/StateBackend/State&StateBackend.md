@@ -16,6 +16,7 @@ State和Checkpoint的存储位置取决与StateBackend的配置
  
 配置
 `environment.setStateBackend(new MemoryStateBackend)`
+
 在这种配置下
 state是持久在java的堆内存,执行checkpoint会把state的快照数据保存到JobManager的内存中
 
@@ -23,10 +24,12 @@ state是持久在java的堆内存,执行checkpoint会把state的快照数据保�
 
 配置
 `env.setStateBackend(new FsStateBackend("hdfs://node01:800/flink/checkDir""))`
+
 state是保存在TaskManager的内存中,执行checkpoint时会把state的快照数据保存到配置的文件系统中
 
 - 3
 
 配置
 `env.setStateBackend(new RocksDBStatebackend("hdfs://node01:8020/flink/checkDir",true))`
+
 state会存储在本地的RocksDB中,同时会把数据也复制到远端的文件系统中
