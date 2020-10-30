@@ -17,7 +17,6 @@ State和Checkpoint的存储位置取决与StateBackend的配置
 配置
 `environment.setStateBackend(new MemoryStateBackend)`
 
-在这种配置下
 state是持久在java的堆内存,执行checkpoint会把state的快照数据保存到JobManager的内存中
 
 - 2 
