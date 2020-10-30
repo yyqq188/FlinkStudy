@@ -2,9 +2,8 @@ package com.asiainfo.DataStream
 
 import java.text.SimpleDateFormat
 
-import org.apache.flink.api.common.state.StateTtlConfig.TimeCharacteristic
 import org.apache.flink.api.java.tuple.Tuple
-import org.apache.flink.streaming.api.CheckpointingMode
+import org.apache.flink.streaming.api.{CheckpointingMode, TimeCharacteristic}
 import org.apache.flink.streaming.api.environment.CheckpointConfig.ExternalizedCheckpointCleanup
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks
 import org.apache.flink.streaming.api.scala.function.WindowFunction
@@ -82,7 +81,8 @@ object FlinkWaterMark_11 {
     val outputWindow:DataStream[String] = waterMarkStream
       .keyBy(0)
       .window(TumblingEventTimeWindows.of(Time.seconds(3)))
-      .sideOutputLateData(outputTag)
+//      .sideOutputLateData(outputTag)
+      .allowedLateness(Time.seconds(2)) //允许数据迟到的时间
       .apply(new MyWindowFunction)
     val sideOutput:DataStream[(String,Long)] = outputWindow.getSideOutput(outputTag)
     sideOutput.print()
