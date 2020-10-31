@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream
+package com.asiainfo.dataStream
 
 import org.apache.hadoop.mapred.{JobConf, Partitioner}
 

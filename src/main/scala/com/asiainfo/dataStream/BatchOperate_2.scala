@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream
+package com.asiainfo.dataStream
 
 import org.apache.flink.api.scala.ExecutionEnvironment
 import org.apache.flink.core.fs.FileSystem.WriteMode

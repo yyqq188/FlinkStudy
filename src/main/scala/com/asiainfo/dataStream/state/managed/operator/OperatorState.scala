@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream.state.managed.operator
+package com.asiainfo.dataStream.state.managed.operator
 
 /**
  * author: yhl

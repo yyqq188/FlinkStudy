@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream.kafkaConnector
+package com.asiainfo.dataStream.kafkaConnector
 
 /**
  * author: yhl

@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream.state.managed.keyed
+package com.asiainfo.dataStream.state.managed.keyed
 
 import org.apache.flink.api.common.functions.{ReduceFunction, RichFlatMapFunction}
 import org.apache.flink.api.common.state.{ReducingState, ReducingStateDescriptor}

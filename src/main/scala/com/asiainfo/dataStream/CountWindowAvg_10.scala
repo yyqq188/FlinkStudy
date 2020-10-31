@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream
+package com.asiainfo.dataStream
 
 import org.apache.flink.api.java.tuple.Tuple
 import org.apache.flink.streaming.api.datastream.DataStreamSink

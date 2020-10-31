@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream
+package com.asiainfo.dataStream
 
 import java.{lang, util}
 

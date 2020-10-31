@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream.state.managed.keyed
+package com.asiainfo.dataStream.state.managed.keyed
 
 /**
  * author: yhl

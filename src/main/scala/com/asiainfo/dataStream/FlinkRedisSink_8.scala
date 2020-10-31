@@ -1,4 +1,4 @@
-package com.asiainfo.DataStream
+package com.asiainfo.dataStream
 
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 import org.apache.flink.streaming.connectors.redis.RedisSink
