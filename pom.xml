@@ -76,6 +76,64 @@
       <version>1.0</version>
     </dependency>
 
+<!--  kafka-->
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-connector-kafka-0.11_2.11</artifactId>
+      <version>1.8.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+
+<!--    mysql-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.38</version>
+    </dependency>
+
+<!--    <dependency>-->
+<!--      <groupId>org.apache.flink</groupId>-->
+<!--      <artifactId>flink-hadoop-compatibility_2.11</artifactId>-->
+<!--      <version>1.8.1</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.apache.flink</groupId>-->
+<!--      <artifactId>flink-shaded-hadoop2</artifactId>-->
+<!--      <version>1.7.2</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.apache.flink</groupId>-->
+<!--      <artifactId>flink-hbase_2.11</artifactId>-->
+<!--      <version>1.8.1</version>-->
+<!--    </dependency>-->
+    <dependency>
+      <groupId>org.apache.hbase</groupId>
+      <artifactId>hbase-client_2.11</artifactId>
+      <version>1.2.0-cdh5.14.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hbase</groupId>
+      <artifactId>hbase-server</artifactId>
+      <version>1.2.0-cdh5.14.2</version>
+    </dependency>
+
   </dependencies>
 
   <build>
