@@ -108,31 +108,32 @@
       <version>5.1.38</version>
     </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>org.apache.flink</groupId>-->
-<!--      <artifactId>flink-hadoop-compatibility_2.11</artifactId>-->
-<!--      <version>1.8.1</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.apache.flink</groupId>-->
-<!--      <artifactId>flink-shaded-hadoop2</artifactId>-->
-<!--      <version>1.7.2</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.apache.flink</groupId>-->
-<!--      <artifactId>flink-hbase_2.11</artifactId>-->
-<!--      <version>1.8.1</version>-->
-<!--    </dependency>-->
+
+<!--    flink-rocksdb-->
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-statebackend-rocksdb_2.11</artifactId>
+      <version>1.9.2</version>
+    </dependency>
+
+<!--    flink-hbase-->
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-hbase_2.11</artifactId>
+      <version>1.8.1</version>
+    </dependency>
     <dependency>
       <groupId>org.apache.hbase</groupId>
-      <artifactId>hbase-client_2.11</artifactId>
-      <version>1.2.0-cdh5.14.2</version>
+      <artifactId>hbase-client</artifactId>
+      <version>2.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hbase</groupId>
       <artifactId>hbase-server</artifactId>
-      <version>1.2.0-cdh5.14.2</version>
+      <version>2.1.0</version>
     </dependency>
+
+
 
   </dependencies>
 
